@@ -1,4 +1,6 @@
 .netlify/
+.netlify-public/
+.netlify-public-20260827/
 node_modules/
 qa-*.png
 qa-*/

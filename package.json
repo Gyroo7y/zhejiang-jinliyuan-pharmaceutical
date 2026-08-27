@@ -1,0 +1,11 @@
+{
+  "name": "jinliyuan-local-prototype",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "prepare-content": "node tools/build-content.mjs",
+    "build": "node tools/build-content.mjs",
+    "check": "node tools/verify-v2.mjs",
+    "test": "node tools/verify-v2.mjs"
+  }
+}

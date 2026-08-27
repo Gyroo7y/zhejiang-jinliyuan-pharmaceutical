@@ -7,7 +7,9 @@ const [html, app, css, data, media] = await Promise.all([
 const content = JSON.parse(data.match(/window\.JINLIYUAN_DATA = ([\s\S]*);\s*$/)[1]);
 const requiredAssets = [
   "assets/official/logo.png",
-  "assets/concept/jinliyuan-abstract-brand-space-hero-v22.png",
+  "assets/concept/jinliyuan-culture-values-concept-v1.png",
+  "assets/concept/jinliyuan-qualifications-trust-concept-v1.png",
+  "assets/concept/jinliyuan-responsibility-concept-v1.png",
   "assets/official/home-project-3.jpg",
   "assets/official/home-project-4.jpg",
   "assets/official/company-qy1.jpg",
@@ -23,14 +25,16 @@ const routes = [
   "careers/environment", "careers/openings", "contact/enquiry",
 ];
 const checks = [
-  ["single local runtime", html.includes('app-v2.js?v=3.0') && html.includes('styles-v2.css?v=3.0')],
+  ["single local runtime", html.includes('app-v2.js?v=3.1') && html.includes('styles-v2.css?v=3.1')],
   ["no obsolete incorrect JLY mark", !/\bJLY\b/.test(app) && !/\bJLY\b/.test(css)],
-  ["full-width balanced approved hero", css.includes("jinliyuan-abstract-brand-space-hero-v22.png") && css.includes("linear-gradient(98deg")],
-  ["confirmed metrics and financial notation", app.includes('data-value="560"') && app.includes('data-value="960"') && app.includes('data-prefix="~"') && !app.includes("960B")],
+  ["full-width balanced approved hero", css.includes("jinliyuan-culture-values-concept-v1.png") && css.includes(".hero-copy")],
+  ["confirmed metrics and financial notation", app.includes('data-value="560"') && app.includes('data-value="960"') && app.includes('data-currency="¥"') && app.includes('data-prefix="~"') && !app.includes("960B")],
   ["counter implementation and reduced-motion support", app.includes("IntersectionObserver") && app.includes("bindCounters") && css.includes("prefers-reduced-motion")],
   ["six featured product layout", app.includes("[55,6,54,7,12,14]") && css.includes("grid-template-columns:repeat(3,minmax(0,1fr))")],
   ["product categories do not repeat landing feature", app.includes('const feature = type === "all"') && app.includes("formulationIds")],
   ["desktop hover mega navigation and mobile menu", app.includes("navGroups") && css.includes(".nav-group:hover .mega") && css.includes(".primary-nav.is-open")],
+  ["header search and career navigation structure", app.includes("header-search") && app.includes('navGroups.filter(([key])=>key!=="careers")')],
+  ["concept assets clearly separated from factual pages", app.includes("责任主题概念视觉") && app.includes("可信记录主题概念视觉") && css.includes(".culture-intro figure img{display:none!important}")],
   ["distinct page-family renderers", ["function about", "function products", "function quality", "function news", "function responsibility", "function careers", "function contact"].every(x=>app.includes(x))],
   ["all primary secondary routes configured", routes.every(route=>app.includes(route))],
   ["gallery has all authentic images and lightbox", app.includes("galleryOrder") && app.includes("bindGallery") && app.includes("gallery-dialog")],

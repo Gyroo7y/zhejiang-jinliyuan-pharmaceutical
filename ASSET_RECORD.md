@@ -108,3 +108,14 @@ The English `Ginseng Royal Jelly Capsules` display title is an internal generic 
 - Homepage featured-product presentation now uses six authentic local product images only: IDs `55`, `6`, `54`, `7`, `12`, `14`. These remain the official package/product visual files identified in the preceding mapping. API structure images are confined to the searchable directory and never mixed into the homepage finished-medicine feature set.
 - Manufacturing, quality, research and responsibility pages continue to use only the official public company, equipment and gallery assets documented above. CSS applies display crop, sizing and tonal treatment only; it does not remove vehicles, alter site content or generate substitute facility/equipment imagery.
 - The 15-image company archive remains complete and source-order labelled. V4 changes only its responsive editorial grid and lightbox behaviour.
+
+## V4.2 concept-visual register — 2026-08-27
+
+| Asset | Current visual use | Factual boundary |
+|---|---|---|
+| `assets/concept/jinliyuan-culture-values-concept-v1.png` | Homepage hero only; an abstract brand space with a central tree and protected copy-side negative space. | Concept / non-factual. It is not a Kinglyuan site, facility, activity, product, laboratory, evidence or personnel photograph. |
+| `assets/concept/jinliyuan-qualifications-trust-concept-v1.png` | Qualifications page atmosphere alongside a source-traceable record ledger. | Concept / non-factual. It does not depict a certificate, filing, archive or externally verified accreditation. |
+| `assets/concept/jinliyuan-responsibility-concept-v1.png` | Responsibility landing and homepage responsibility preview. | Concept / non-factual. It does not depict a real Kinglyuan sustainability project, community activity, site or environmental outcome. |
+
+- `jinliyuan-culture-values-concept-v1.png` is intentionally not repeated on the Culture page; that page uses a CSS-built abstract composition so the homepage retains a unique first impression.
+- All three files remain brand-atmosphere assets. They must never be captioned or described as real factual company imagery in future changes.

@@ -1,0 +1,7 @@
+.git/
+.netlify/
+qa-*/
+*.md
+tools/
+start-local.ps1
+pass2.js
